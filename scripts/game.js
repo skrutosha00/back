@@ -291,7 +291,7 @@ function checkPossibleMoves(color) {
 }
 
 function checkVictory() {
-    let blackWin, whiteWin = true
+    let [blackWin, whiteWin] = [true, true]
 
     for (let i = 0; i < 24; i++) {
         if (pieceMap[i]) {
@@ -299,7 +299,7 @@ function checkVictory() {
                 whiteWin = false
             }
 
-            if (pieceMap[i][1] == 'b' && i < 6) {
+            if (pieceMap[i][1] == 'b' && i > 5) {
                 blackWin = false
             }
         }
