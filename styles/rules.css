@@ -1,0 +1,19 @@
+.rules_header {
+  margin: 40px auto 20px;
+  font-size: 2rem;
+}
+
+.rule {
+  margin: 40px auto 20px;
+  max-width: 80%;
+}
+
+@media screen and (min-width: 600px) {
+    .rules_header {
+        font-size: 3rem;
+    }
+
+    .home {
+        transform: scale(1.2);
+    }
+}

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="initial-scale=1.0, width=device-width, viewport-fit=cover"
+    />
+    <link rel="shortcut icon" href="../png/icon.png" />
+    <link rel="stylesheet" href="../styles/common_style.css" />
+    <link rel="stylesheet" href="../styles/game.css" />
+    <title>BackGammon</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="game_over">
+        <div class="outcome button_elips"><span></span></div>
+        <a href="./main.html" class="link button_circle">
+          <img src="../png/tick.png" alt="tick" />
+        </a>
+      </div>
+
+      <a href="./main.html" class="home">
+        <img src="../png/home.png" alt="home" />
+      </a>
+
+      <div class="board"></div>
+
+      <div class="dice_cont">
+        <div class="dice dice_1">
+          <img src="../png/dice_5.png" alt="dice" />
+        </div>
+
+        <div class="dice dice_2">
+          <img src="../png/dice_6.png" alt="dice" />
+        </div>
+
+        <div class="button_roll">
+          <span>Roll</span>
+        </div>
+      </div>
+
+      <div class="footer">
+        <div class="balance_field"></div>
+        <div class="move">White's move</div>
+      </div>
+    </div>
+
+    <script src="../scripts/game.js" type="module"></script>
+  </body>
+</html>

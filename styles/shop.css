@@ -1,0 +1,70 @@
+.wrapper {
+  overflow: scroll;
+  height: 1100px;
+  min-height: 100vh;
+}
+
+.shop_header {
+  margin: 40px auto 20px;
+  font-size: 2rem;
+}
+
+.shop {
+  width: 350px;
+  margin: auto auto 50px;
+}
+
+.card {
+  position: relative;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+
+  margin-bottom: 80px;
+}
+
+.pic_cont {
+  width: 100%;
+}
+
+.card img {
+  max-width: 85%;
+  max-height: 85%;
+}
+
+.button_elips {
+  position: absolute;
+  left: 50%;
+  bottom: -15%;
+  transform: translate(-50%, -50%);
+
+  width: 235px;
+  height: 58px;
+
+  background: url(../png/button_elips.png) center/100% 100%;
+}
+
+.balance.red {
+  color: tomato;
+}
+
+.footer {
+  position: fixed;
+  opacity: 1;
+}
+
+@media screen and (min-width: 600px) {
+  .shop_header {
+    font-size: 3rem;
+  }
+
+  .home {
+    transform: scale(1.2);
+  }
+
+  .button_elips {
+    transform: translate(-50%, -50%) scale(1.3);
+  }
+}

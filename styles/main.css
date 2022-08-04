@@ -1,0 +1,31 @@
+.header {
+  font-size: 2rem;
+  margin: 40px auto 30px;
+}
+
+.button_elips {
+  display: block;
+
+  width: 347px;
+  height: 86px;
+
+  margin: auto;
+  margin-top: 25px;
+  transform-origin: top;
+}
+
+.button_circle {
+  display: block;
+  margin: auto;
+
+  width: 197px;
+  height: 186px;
+}
+
+.button_circle img {
+  position: absolute;
+  left: 18%;
+  top: 15%;
+
+  width: 60%;
+}
