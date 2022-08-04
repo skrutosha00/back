@@ -174,8 +174,13 @@ function getBoardPosition(x, y) {
         sizeCf = 1.8
     }
 
-    x -= board.getBoundingClientRect().left
-    y -= board.getBoundingClientRect().top
+    if (sizeCf > 1) {
+        x -= board.getBoundingClientRect().left
+        y -= board.getBoundingClientRect().top
+    } else {
+        x -= board.offsetLeft
+        y -= board.offsetTop
+    }
 
     if (y < 17 * sizeCf || (y > 189 * sizeCf && y < 230 * sizeCf) || y > 404 * sizeCf) {
         return section
